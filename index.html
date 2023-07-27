@@ -41,19 +41,54 @@
     >
       <!-- navbar -->
       <nav
-        class="flex items-center justify-between h-[120px] md:bg-primary rounded-full md:px-12 md:mt-12 mb-14"
+        class="flex items-center justify-start lg:justify-between h-16 md:h-20 lg:h-[120px] md:bg-primary rounded-full md:px-12 mt-10 md:mt-12 relative"
       >
+        <input
+          type="checkbox"
+          name="Mobile menu"
+          id="hamberger"
+          class="hidden"
+        />
+        <label
+          class="lg:hidden absolute right-0 md:right-12 top-1/2 -mt-2"
+          for="hamberger"
+        >
+          <span class="w-5 h-[2px] rounded bg-black block mb-1"></span>
+          <span class="w-5 h-[2px] rounded bg-black block"></span>
+          <span class="w-5 h-[2px] rounded bg-black block mt-1"></span>
+        </label>
+
         <!-- Desktop menu -->
         <ul
-          class="menu menu-horizontal px-1 hidden lg:flex lg:gap-8 font-bold text-lg text-white"
+          class="menu menu-horizontal px-1 hidden lg:flex lg:gap-5 xl:gap-8 font-bold text-lg text-white"
         >
-          <li><a class="hover:text-white bg-transparent" href="#">Home</a></li>
           <li>
-            <a class="hover:text-white bg-transparent" href="#">About Us</a>
+            <a
+              class="hover:text-white bg-transparent hover:bg-transparent border-b-2 border-transparent hover:border-white hover:border-b-2 border-spacing-1 rounded-none p-0"
+              href="#"
+              >Home</a
+            >
           </li>
-          <li><a class="hover:text-white bg-transparent" href="#">Shop</a></li>
           <li>
-            <a class="hover:text-white bg-transparent" href="#">All Fruits</a>
+            <a
+              class="hover:text-white bg-transparent hover:bg-transparent border-b-2 border-transparent hover:border-white hover:border-b-2 border-spacing-1 rounded-none p-0"
+              href="#"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-white bg-transparent hover:bg-transparent border-b-2 border-transparent hover:border-white hover:border-b-2 border-spacing-1 rounded-none p-0"
+              href="#"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-white bg-transparent hover:bg-transparent border-b-2 border-transparent hover:border-white hover:border-b-2 border-spacing-1 rounded-none p-0"
+              href="#"
+              >All Fruits</a
+            >
           </li>
         </ul>
         <!-- logo -->
@@ -65,8 +100,10 @@
           <span class="text-2xl lg:text-[40px]">Fruit Burst</span>
         </a>
         <!-- search box -->
-        <div class="hidden md:flex items-center md:space-x-4">
-          <div class="relative lg:w-[400px]">
+        <div
+          class="hidden md:ml-[15%] lg:ml-0 md:flex items-center md:space-x-4"
+        >
+          <div class="relative xl:w-[400px]">
             <span class="absolute inset-y-0 right-6 flex items-center pl-2">
               <button type="submit" title="Search" class="focus:outline-none">
                 <img src="images/search-icon.svg" alt="search icon" />
@@ -80,40 +117,13 @@
             />
           </div>
         </div>
-        <!-- hamberger -->
-        <button title="Open menu" type="button" class="p-4 lg:hidden dropdown">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="w-6 h-6 dark:text-gray-100"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-          <!-- mobile menu -->
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">All Fruits</a></li>
-          </ul>
-        </button>
       </nav>
       <!-- hero slider -->
       <div class="carousel w-full">
         <!-- slider-item -->
         <div
           id="slide1"
-          class="carousel-item relative w-full lg:min-h-[600px] bg-[url(./images/banner1.png)] bg-cover rounded-xl overflow-hidden z-10"
+          class="carousel-item relative w-full lg:min-h-[600px] bg-[url(./images/banner1.png)] bg-cover rounded-xl overflow-hidden z-10 mt-10 md:mt-12 lg:mt-14"
         >
           <!-- overlay -->
           <div
@@ -156,7 +166,7 @@
         <!-- slider-item -->
         <div
           id="slide2"
-          class="carousel-item relative w-full lg:min-h-[600px] bg-[url(./images/banner2.png)] bg-cover rounded-xl overflow-hidden z-10"
+          class="carousel-item relative w-full lg:min-h-[600px] bg-[url(./images/banner2.png)] bg-cover rounded-xl overflow-hidden z-10 mt-10 md:mt-12 lg:mt-14"
         >
           <!-- overlay -->
           <div
@@ -199,7 +209,7 @@
         <!-- slider-item -->
         <div
           id="slide3"
-          class="carousel-item relative w-full lg:min-h-[600px] bg-[url(./images/banner3.png)] bg-cover rounded-xl overflow-hidden z-10"
+          class="carousel-item relative w-full lg:min-h-[600px] bg-[url(./images/banner3.png)] bg-cover rounded-xl overflow-hidden z-10 mt-10 md:mt-12 lg:mt-14"
         >
           <!-- overlay -->
           <div
@@ -242,7 +252,7 @@
         <!-- slider-item -->
         <div
           id="slide4"
-          class="carousel-item relative w-full lg:min-h-[600px] bg-[url(./images/banner4.png)] bg-cover rounded-xl overflow-hidden z-10"
+          class="carousel-item relative w-full lg:min-h-[600px] bg-[url(./images/banner4.png)] bg-cover rounded-xl overflow-hidden z-10 mt-10 md:mt-12 lg:mt-14"
         >
           <!-- overlay -->
           <div
@@ -283,40 +293,61 @@
           </div>
         </div>
       </div>
+      <!-- slider-bottom part -->
       <section
         class="hidden lg:flex items-center justify-center gap-10 xl:gap-24 px-16 bg-white rounded shadow max-w-[80%] mx-auto relative h-[250px] -top-32 z-50"
       >
         <!-- item -->
         <div>
-          <img class="mx-auto" src="./images/fruit1.png" alt="Fruit" />
+          <img
+            class="mx-auto hover:scale-110 transition"
+            src="./images/fruit1.png"
+            alt="Fruit"
+          />
           <h4 class="text-[#121212CC] text-xl font-medium mt-4 text-center">
             Grapes
           </h4>
         </div>
         <!-- item -->
         <div>
-          <img class="mx-auto" src="./images/fruit2.png" alt="Fruit" />
+          <img
+            class="mx-auto hover:scale-110 transition"
+            src="./images/fruit2.png"
+            alt="Fruit"
+          />
           <h4 class="text-[#121212CC] text-xl font-medium mt-4 text-center">
             Orange
           </h4>
         </div>
         <!-- item -->
         <div>
-          <img class="mx-auto" src="./images/fruit3.png" alt="Fruit" />
+          <img
+            class="mx-auto hover:scale-110 transition"
+            src="./images/fruit3.png"
+            alt="Fruit"
+          />
           <h4 class="text-[#121212CC] text-xl font-medium mt-4 text-center">
             Mango
           </h4>
         </div>
         <!-- item -->
         <div>
-          <img class="mx-auto" src="./images/fruit4.png" alt="Fruit" />
+          <img
+            class="mx-auto hover:scale-110 transition"
+            src="./images/fruit4.png"
+            alt="Fruit"
+          />
           <h4 class="text-[#121212CC] text-xl font-medium mt-4 text-center">
             Strawberry
           </h4>
         </div>
         <!-- item -->
         <div>
-          <img class="mx-auto" src="./images/fruit5.png" alt="Fruit" />
+          <img
+            class="mx-auto hover:scale-110 transition"
+            src="./images/fruit5.png"
+            alt="Fruit"
+          />
           <h4 class="text-[#121212CC] text-xl font-medium mt-4 text-center">
             Anar
           </h4>
@@ -444,7 +475,7 @@
                 </div>
                 <div class="card-actions mt-6">
                   <button
-                    class="btn btn-link text-primary decoration-transparent"
+                    class="btn btn-link text-primary decoration-transparent border-2 border-transparent hover:border-primary"
                     onclick="my_modal_0.showModal()"
                   >
                     Details
@@ -577,7 +608,7 @@
                 </div>
                 <div class="card-actions mt-6">
                   <button
-                    class="btn btn-link text-primary decoration-transparent"
+                    class="btn btn-link text-primary decoration-transparent border-2 border-transparent hover:border-primary"
                     onclick="my_modal_1.showModal()"
                   >
                     Details
@@ -710,7 +741,7 @@
                 </div>
                 <div class="card-actions mt-6">
                   <button
-                    class="btn btn-link text-primary decoration-transparent"
+                    class="btn btn-link text-primary decoration-transparent border-2 border-transparent hover:border-primary"
                     onclick="my_modal_2.showModal()"
                   >
                     Details
@@ -843,7 +874,7 @@
                 </div>
                 <div class="card-actions mt-6">
                   <button
-                    class="btn btn-link text-primary decoration-transparent"
+                    class="btn btn-link text-primary decoration-transparent border-2 border-transparent hover:border-primary"
                     onclick="my_modal_3.showModal()"
                   >
                     Details
@@ -1076,7 +1107,7 @@
           <!--======== part-1 ========-->
           <div class="grid grid-cols-1 gap-10 my-6 lg:my-0 order-2 lg:order-1">
             <!-- items -->
-            <div class="grid lg:grid-cols-[60px_1fr] gap-6 pr-12">
+            <div class="grid lg:grid-cols-[60px_1fr] gap-6 lg:pr-12">
               <!-- icon -->
               <div
                 class="bg-[#1212121a] p-[18px] h-[60px] w-[60px] rounded-full flex justify-center items-center self-start mx-auto"
@@ -1094,7 +1125,7 @@
               </div>
             </div>
             <!-- items -->
-            <div class="grid lg:grid-cols-[60px_1fr] gap-6 pr-12">
+            <div class="grid lg:grid-cols-[60px_1fr] gap-6 lg:pr-12">
               <!-- icon -->
               <div
                 class="bg-[#1212121a] p-[18px] h-[60px] w-[60px] rounded-full flex justify-center items-center self-start mx-auto"
@@ -1112,7 +1143,7 @@
               </div>
             </div>
             <!-- items -->
-            <div class="grid lg:grid-cols-[60px_1fr] gap-6 pr-12">
+            <div class="grid lg:grid-cols-[60px_1fr] gap-6 lg:pr-12">
               <!-- icon -->
               <div
                 class="bg-[#1212121a] p-[18px] h-[60px] w-[60px] rounded-full flex justify-center items-center self-start mx-auto"
@@ -1137,7 +1168,7 @@
           <!-- ======== part-3 ========-->
           <div class="grid grid-cols-1 gap-10 order-3 lg:order-3">
             <!-- items -->
-            <div class="grid lg:grid-cols-[1fr_60px] gap-6 pr-12">
+            <div class="grid lg:grid-cols-[1fr_60px] gap-6 lg:pr-12">
               <!-- icon -->
               <div
                 class="bg-[#1212121a] p-[18px] h-[60px] w-[60px] rounded-full flex justify-center items-center self-start lg:order-last mx-auto"
@@ -1155,7 +1186,7 @@
               </div>
             </div>
             <!-- items -->
-            <div class="grid lg:grid-cols-[1fr_60px] gap-6 pr-12">
+            <div class="grid lg:grid-cols-[1fr_60px] gap-6 lg:pr-12">
               <!-- icon -->
               <div
                 class="bg-[#1212121a] p-[18px] h-[60px] w-[60px] rounded-full flex justify-center items-center self-start lg:order-last mx-auto"
@@ -1173,7 +1204,7 @@
               </div>
             </div>
             <!-- items -->
-            <div class="grid lg:grid-cols-[1fr_60px] gap-6 pr-12">
+            <div class="grid lg:grid-cols-[1fr_60px] gap-6 lg:pr-12">
               <!-- icon -->
               <div
                 class="bg-[#1212121a] p-[18px] h-[60px] w-[60px] rounded-full flex justify-center items-center self-start lg:order-last mx-auto"
@@ -1231,29 +1262,29 @@
       </nav>
       <!-- footer social -->
       <div class="flex gap-6 lg:gap-10 lg:mt-12 mt-6 justify-center">
-        <a href="#"
+        <a href="#" class="hover:scale-110 transition"
           ><img src="./images/footer-icons/twitter.svg" alt="twitter"
         /></a>
-        <a href="#"
+        <a href="#" class="hover:scale-110 transition"
           ><img src="./images/footer-icons/facebook.svg" alt="facebook"
         /></a>
-        <a href="#"
+        <a href="#" class="hover:scale-110 transition"
           ><img src="./images/footer-icons/youtube.svg" alt="youtube"
         /></a>
-        <a href="#"
+        <a href="#" class="hover:scale-110 transition"
           ><img src="./images/footer-icons/linkedin.svg" alt="linkedin"
         /></a>
-        <a href="#"
+        <a href="#" class="hover:scale-110 transition"
           ><img src="./images/footer-icons/instagram.svg" alt="instagram"
         /></a>
-        <a href="#"
+        <a href="#" class="hover:scale-110 transition"
           ><img src="./images/footer-icons/apple.svg" alt="apple"
         /></a>
       </div>
       <div class="bg-slate-800 block py-8 text-center mt-9 md:mt-24 lg:mt-36">
         <p>
-          Copyright © 2023 - All right reserved by Rezaul Karim - Programming
-          Hero.
+          Copyright © 2023 - All right reserved by
+          <span class="text-primary"> Rezaul Karim </span>- Programming Hero.
         </p>
       </div>
     </footer>
