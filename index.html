@@ -35,6 +35,7 @@
     </script>
   </head>
   <body>
+    <!-- ============  header section ============  -->
     <header
       class="dark:bg-gray-800 dark:text-gray-100 container mx-auto px-5 lg:px-0"
     >
@@ -60,7 +61,8 @@
           href="#"
           class="flex gap-2 md:gap-4 items-center md:text-white text-xl md:text-[40px] font-bold"
         >
-          <img src="images/logo.png" alt="Logo" /> <span>Fruit Burst</span>
+          <img src="images/logo.png" alt="Logo" />
+          <span class="text-2xl lg:text-[40px]">Fruit Burst</span>
         </a>
         <!-- search box -->
         <div class="hidden md:flex items-center md:space-x-4">
@@ -323,7 +325,7 @@
     </header>
     <!-- main  -->
     <main class="container mx-auto px-5 lg:px-0">
-      <!-- featured products -->
+      <!-- ============ featured products ============ -->
       <section class="mt-6 md:mt-12 lg:mt-0">
         <!-- section title -->
         <div class="lg:flex justify-between">
@@ -934,7 +936,7 @@
           >
         </div>
       </section>
-      <!-- Team section -->
+      <!-- ============ Team section ============ -->
       <section
         class="mt-6 md:mt-12 lg:mt-36 bg-[url(./images/team.png)] bg-cover relative rounded-xl overflow-hidden"
       >
@@ -1054,7 +1056,7 @@
           </div>
         </div>
       </section>
-      <!-- Why Choose us -->
+      <!-- ============ Why Choose us ============ -->
       <section class="my-6 md:my-12 lg:my-36">
         <!-- title -->
         <div class="md:max-w-[615px] mx-auto lg:mb-0 mb-12 relative z-30">
@@ -1192,6 +1194,66 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
+    <footer class="pt-9 md:pt-24 lg:pt-36 bg-[#121212] text-white">
+      <!-- logo -->
+      <div class="text-center">
+        <a
+          href="#"
+          class="flex gap-2 md:gap-4 items-center md:text-white text-xl md:text-[40px] font-bold justify-center"
+        >
+          <img src="images/logo.png" alt="Logo" />
+          <span class="text-2xl lg:text-[40px]">Fruit Burst</span>
+        </a>
+      </div>
+      <!-- footer nav -->
+      <nav
+        class="flex gap-10 lg:gap-16 mt-7 md:mt-10 lg:mt-14 flex-wrap justify-center"
+      >
+        <a href="#" class="hover:text-primary transition text-lg font-semibold"
+          >Home</a
+        >
+        <a href="#" class="hover:text-primary transition text-lg font-semibold"
+          >About us</a
+        >
+        <a href="#" class="hover:text-primary transition text-lg font-semibold"
+          >Shop</a
+        >
+        <a href="#" class="hover:text-primary transition text-lg font-semibold"
+          >All Fruits</a
+        >
+        <a href="#" class="hover:text-primary transition text-lg font-semibold"
+          >Support</a
+        >
+        <a href="#" class="hover:text-primary transition text-lg font-semibold"
+          >My Account</a
+        >
+      </nav>
+      <!-- footer social -->
+      <div class="flex gap-6 lg:gap-10 lg:mt-12 mt-6 justify-center">
+        <a href="#"
+          ><img src="./images/footer-icons/twitter.svg" alt="twitter"
+        /></a>
+        <a href="#"
+          ><img src="./images/footer-icons/facebook.svg" alt="facebook"
+        /></a>
+        <a href="#"
+          ><img src="./images/footer-icons/youtube.svg" alt="youtube"
+        /></a>
+        <a href="#"
+          ><img src="./images/footer-icons/linkedin.svg" alt="linkedin"
+        /></a>
+        <a href="#"
+          ><img src="./images/footer-icons/instagram.svg" alt="instagram"
+        /></a>
+        <a href="#"
+          ><img src="./images/footer-icons/apple.svg" alt="apple"
+        /></a>
+      </div>
+      <div class="bg-slate-800 block py-8 text-center mt-9 md:mt-24 lg:mt-36">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
   </body>
 </html>
 <!-- You can open the modal using ID.showModal() method -->
